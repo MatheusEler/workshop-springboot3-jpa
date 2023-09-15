@@ -32,15 +32,10 @@ public class User implements Serializable{
 	@JsonIgnore
 	@OneToMany(mappedBy = "client")
 	private List<Order> orders = new ArrayList<>();
-	
-	
-	
-	
+
 	public List<Order> getOrders() {
 		return orders;
 	}
-
-	
 
 	public User() {
 		
